@@ -31,17 +31,28 @@ body {
     margin-bottom: 50px;
 }
 
-.search-input {
-    min-width: 690px;
-    height: 40px;
+.input {
+    background: #ffffff;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
     color: #bfbfbf;
+    padding-left: 32px;
+    height: 40px;
     align-items: center;
+}
+
+.input-address {
+    min-width: 690px;
     background: url(../img/home.svg);
     background-repeat: no-repeat;
     background-position: left 11px center;
-    padding-left: 32px;
+}
+
+.input-search {
+    min-width: 306px;
+    background: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
 }
 
 .buttons {
