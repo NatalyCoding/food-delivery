@@ -42,7 +42,7 @@ body {
 }
 
 .input-address {
-    min-width: 690px;
+    flex: 0.8;
     background: url(../img/home.svg);
     background-repeat: no-repeat;
     background-position: left 11px center;
@@ -156,6 +156,7 @@ body {
     overflow: hidden;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
+    flex-basis: 31%;
 }
 
 .card-image {
@@ -215,6 +216,13 @@ body {
     margin-right: 10px;
 }
 
+.category {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 150px;
+}
+
 .price:after {
     content: "";
     width: 5px;
@@ -261,4 +269,96 @@ body {
 
 .social-link:not(:last-child) {
     margin-right: 21px;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background-size: 400px;
+    }
+    .rating {
+        margin-right: 15px;
+    }
+    .category,
+    .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .promo {
+        padding: 50px;
+        background-size: 300px;
+    }
+    .promo-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .promo-text {
+        font-size: 18px;
+        max-width: 400px;
+    }
+    .card {
+        flex-basis: 48%;
+    }
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-width: 560px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-info {
+        flex-wrap: wrap;
+    }
+    .rating {
+        flex-basis: 100%;
+    }
+    .promo-title {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    .promo {
+        background-size: 200px;
+    }
+    .promo-text {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .input-address {
+        order: 5;
+        flex: 1;
+        margin-top: 15px;
+    }
+    .promo {
+        background-image: none;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .card-image {
+        width: 100%;
+    }
 }
